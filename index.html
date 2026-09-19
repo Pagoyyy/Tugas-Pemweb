@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelompok Kami</title>
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --paper: #f7f5f1;
+    --line: #d8d3c8;
+    --accent: #2f5d50;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  header {
+    padding: 64px 24px 40px;
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.4rem;
+    margin: 0 0 8px;
+    letter-spacing: 0.5px;
+  }
+  header p {
+    margin: 0;
+    color: #555;
+    font-size: 1.05rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  section {
+    margin-bottom: 48px;
+  }
+  section h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  .anggota-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .anggota-card {
+    border: 1px solid var(--line);
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: border-color 0.2s ease;
+  }
+  .anggota-card:hover {
+    border-color: var(--accent);
+  }
+  .anggota-card h3 {
+    margin: 0 0 6px;
+    color: var(--accent);
+  }
+  .anggota-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #555;
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid var(--line);
+  }
+  @media (max-width: 560px) {
+    .anggota-list { grid-template-columns: 1fr; }
+  }
+</style>
+  <link rel="stylesheet" href="styles.css">
+<body>
+
+<header>
+  <h1>JOKER VS BATMAN</h1>
+  <p>Tugas Kolaborasi Web &mdash; Universitas Sultan Ageng Tirtayasa</p>
+</header>
+
+<main>
+  <section>
+    <h2>Tentang Proyek Ini</h2>
+    <p>
+      Halaman ini dibuat sebagai bagian dari tugas kolaborasi menggunakan Git dan GitHub.
+      Halaman ini dikerjakan bersama oleh kedua anggota kelompok, sedangkan dua halaman
+      lain di bawah dikerjakan secara individu lalu digabungkan melalui proses <em>merge</em>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Anggota Kelompok</h2>
+    <div class="anggota-list">
+      <a class="anggota-card" href="Fadhal hl1.html">
+        <h3>Fadhal &mdash; Profil</h3>
+        <p>Halaman profil individu</p>
+      </a>
+      <a class="anggota-card" href="Fadhal hl2.html">
+        <h3>Fadhal &mdash; Hobi</h3>
+        <p>Halaman hobi individu</p>
+      </a>
+      <a class="anggota-card" href="rifqi hl1.html">
+        <h3>Rifqi &mdash; Profil</h3>
+        <p>Halaman profil individu</p>
+      </a>
+      <a class="anggota-card" href="rifqi hl2.html">
+        <h3>Rifqi &mdash; Hobi</h3>
+        <p>Halaman hobi individu</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Nama Kelompok. Dibuat untuk keperluan tugas kuliah.
+</footer>
+
+</body>
+</html>
