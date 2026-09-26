@@ -1,6 +1,6 @@
 :root {
   --ink: #1c1c1c;
-  --paper: #ffffff;
+  --paper: #f7f5f1;
   --line: #d8d3c8;
   --accent: #2f5d50;
 }
@@ -17,37 +17,29 @@ body {
   line-height: 1.6;
 }
 
-nav {
-  padding: 20px 24px;
+.navbar {
+  font-family: Arial, sans-serif;
   border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
 }
 
-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  margin-right: 16px;
+.navbar .navbar-nav {
+  gap: 0.25rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.navbar .nav-link {
+  padding-inline: 0.75rem;
 }
 
 main {
-  max-width: 640px;
+  width: 100%;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 56px 24px;
+  padding: 48px 24px;
 }
 
 h1 {
   margin: 0 0 4px;
   font-size: 2rem;
-}
-
-.peran {
-  color: var(--accent);
-  font-size: 1rem;
-  margin-bottom: 24px;
 }
 
 h2 {
@@ -59,6 +51,12 @@ h2 {
 
 ul {
   padding-left: 20px;
+}
+
+.peran {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 24px;
 }
 
 .foto-placeholder {
@@ -99,7 +97,6 @@ header {
 header h1 {
   font-size: 2.4rem;
   margin: 0 0 8px;
-  letter-spacing: 0.5px;
 }
 
 header p {
@@ -119,18 +116,19 @@ section h2 {
   margin-bottom: 16px;
 }
 
-.anggota-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+main .anggota-list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .anggota-card {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 0;
   border: 1px solid var(--line);
   padding: 20px;
   text-decoration: none;
   color: inherit;
-  display: block;
   transition: border-color 0.2s ease;
 }
 
@@ -157,8 +155,25 @@ footer {
   border-top: 1px solid var(--line);
 }
 
-@media (max-width: 560px) {
-  .anggota-list {
-    grid-template-columns: 1fr;
+@media (max-width: 575.98px) {
+  main {
+    padding: 32px 18px;
+  }
+
+  header {
+    padding: 40px 18px 28px;
+  }
+
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  .anggota-card {
+    flex-basis: 100%;
+  }
+
+  .foto-placeholder {
+    width: 136px;
+    height: 136px;
   }
 }
